@@ -15,11 +15,13 @@
    "hardware": "Chrome",
    "throwOff": "Internal Snare Wire",
    "butt": "",
-   "accessories": "Mounting Bracket, Jingles"
+   "accessories": "Mounting Bracket, Jingles",
+   "image": "PDSL350SHRBKC1"
  },
  {
    "title": "PMT Black Reverse Burst 14’’x6,5’’",
    "code": 10011440,
+        "image": "PDSAN654MRBB-BC",
    "link": "https://playdixon.com/product/pdsan654mrbb-bc/",
    "video": "https://youtu.be/2oxb40RdH_g?feature=shared",
    "model": "PMT Black Reverse Burst",
@@ -38,6 +40,7 @@
  {
    "title": "Artisan Australian Rose Gum 14‘‘x6,5‘‘",
    "code": 10011961,
+        "image": "PDSAN654CBRG1",
    "link": "https://playdixon.com/product/australian-rose-gum-snares/",
    "video": "",
    "model": "Artisan Rose Gum",
@@ -56,6 +59,7 @@
  {
    "title": "Artisan Gregg Bissonette Big Bud 14’’x8’’",
    "code": 10012381,
+        "image": "PDSAN814GBU",
    "link": "https://playdixon.com/product/pdsan814gbu/",
    "video": "https://youtu.be/YVU5UvgImB8?feature=shared",
    "model": "Gregg Bissonette ‘’Big Bud’’ Signature",
@@ -74,6 +78,7 @@
  {
    "title": "Artisan Gregg Bissonette Signature 14’’x6,5’’",
    "code": 10004006,
+        "image": "PDSAN654GBS",
    "link": "https://playdixon.com/product/pdsan654gbs/",
    "video": "https://youtu.be/8p3PxmOaiko?feature=shared",
    "model": "Gregg Bissonette Signature",
@@ -92,6 +97,7 @@
  {
    "title": "Artisan Ahe-Enchanted Electric Blue Burst 14’’x6,5’’",
    "code": 10003997,
+        "image": "PDSAN654EA",
    "link": "https://playdixon.com/product/pdsan654ea/",
    "video": "https://youtu.be/zDx33RE4w2Y?feature=shared",
    "model": "Ash-Enchanted Blue Burst",
@@ -110,6 +116,7 @@
  {
    "title": "Artisan Blue Titanium 14’’6,5’’",
    "code": 10003998,
+        "image": "PDSAN654BTS",
    "link": "https://playdixon.com/product/pdsan654bts/",
    "video": "https://youtu.be/NjrcqZkQFeQ?feature=shared",
    "model": "Artisan Blue Titanium",
@@ -128,6 +135,7 @@
  {
    "title": "Cornerstone Purple Titanium 14’’x6,5’’",
    "code": 10004016,
+        "image":"PDSCST654PTS",
    "link": "https://playdixon.com/product/pdscst654pts/",
    "video": "https://youtu.be/l9eR9_6XHxM?feature=shared",
    "model": "Purple Titanium",
@@ -146,6 +154,7 @@
  {
    "title": "Cornerstone Steel 14‘’x6,5‘‘",
    "code": 10004018,
+        "image": "PDSCST654ST",
    "link": "https://playdixon.com/product/pdscst654st/",
    "video": "https://youtu.be/J1PFBFaMTAo?feature=shared",
    "model": "Purple Titanium",
@@ -164,6 +173,7 @@
  {
    "title": "Cornerstone Aluminum 14’’x6.5’’",
    "code": 10004019,
+        "image": "PDSCST654AL",
    "link": "https://playdixon.com/product/pdscst654al/",
    "video": "https://youtu.be/pExixx6BGVE?feature=shared",
    "model": "Cornerstone Aluminium",
@@ -182,6 +192,7 @@
  {
    "title": "Cornerstone See-Through Blue Acrylic 14’’x6.5’’",
    "code": 10006561,
+        "image": "PDSCST654ACB",
    "link": "https://playdixon.com/product/pdscst654acb/",
    "video": "https://youtu.be/8ZOkMXQtjqU?feature=shared",
    "model": "Blue Acrylic",
@@ -200,6 +211,7 @@
  {
    "title": "Classix Steel 14’’x3.5’’",
    "code": 10012292,
+        "image": "PDSCL354ST",
    "link": "https://playdixon.com/product/pdscl354st/",
    "video": "",
    "model": "Classic Steel",

@@ -1,0 +1,10 @@
+---
+import { Image } from "astro:assets";
+const {platform, id} = Astro.props;
+const path = "/src/assets/"
+---
+
+<a href={"https://www." + platform + ".com/" + id} class="flex items-center gap-2">
+    <img src={path + platform + ".svg"} alt="Dixon {platform}" class="w-10 h-10 "/> 
+    <span class="uppercase text-xs font-thin">@{id}</span>
+</a>

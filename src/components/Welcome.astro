@@ -1,23 +1,26 @@
 ---
 import Header from './Header.astro';
 import snares from "../assets/snares.json";
-import tests from "../assets/test.json";
 import Snare from './Snare.astro';
+import SocialLinks from './SocialLinks.astro';
 ---
 
 <div id="container">
     <Header />
+
     <section id='hero' class="w-full flex items-center justify-center h-80 bg-gray-100">
         Video
     </section>
+
     <section id='intro' class="flex flex-col items-center gap-8 px-8">
-    <p>social links</p>
-    <h1 class="text-2xl font-bold uppercase">Thanks for visiting!</h1>
-    <p>It was great seeing you at the Dixon booth.<br/> Explore all of the incredible kits and snares on display at the links below.</p>
+        <SocialLinks />
+        <h1 class="text-2xl font-bold uppercase">Thanks for visiting!</h1>
+        <p class="text-center">It was great seeing you at the Dixon booth.<br/> Explore all of the incredible kits and snares on display at the links below.</p>
 
         <hr class="text-black h-1"/>
-    <h2 class="font-bold text-xl">Featured Kit</h2>
+        <h2 class="font-bold text-xl">Featured Kit</h2>
     </section>
+
     <section id="snares" class="flex flex-col gap-6 items-center px-4">
         <h3 class="text-2xl uppercase font-thin border-t mt-4 pt-4 w-full text-center">Snares</h3>
         <div class="flex gap-3 flex-wrap justify-center">

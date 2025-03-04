@@ -1,9 +1,14 @@
 ---
-const {title, code, link, video, model, number, size, shell, finish, head, reso, hoops, hardware, throwOff, butt, accessories} = Astro.props;
+import { Image } from "astro:assets";
+
+const {title, code, link, image, video, model, number, size, shell, finish, head, reso, hoops, hardware, throwOff, butt, accessories} = Astro.props;
 ---
 
-<article class="card w-40 h-56 flex flex-col p-3 border rounded-xl">
-    <h4 class="text-lg font-bold">{title}</h2>
-        <p>{code}</p>
+<article class="card w-40 h-72 flex flex-col p-3 border rounded-xl">
+    <p class="w-full flex justify-center">
+        <Image alt={title} src={"https://media.sound-service.eu/Artikelbilder/Shopsystem/96x52/" + image + ".jpg"} width="96" height="52" />
+    </p>
+    <h4 class="font-bold text-lg my-3">{title}</h2>
+        <p class="text-sm">{code}</p>
         <a href={link} class="bg-indigo-800 text-white px-3 py-2 rounded-xl mt-auto">More info →</a>
 </article>
