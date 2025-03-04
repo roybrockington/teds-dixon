@@ -5,35 +5,27 @@ import tests from "../assets/test.json";
 import Snare from './Snare.astro';
 ---
 
-console.log(snares)
-
 <div id="container">
     <Header />
-    <section id='video'>
+    <section id='hero' class="w-full flex items-center justify-center h-80 bg-gray-100">
         Video
     </section>
+    <section id='intro' class="flex flex-col items-center gap-8 px-8">
     <p>social links</p>
-    <h1>Thanks for visiting!</h1>
+    <h1 class="text-2xl font-bold uppercase">Thanks for visiting!</h1>
     <p>It was great seeing you at the Dixon booth.<br/> Explore all of the incredible kits and snares on display at the links below.</p>
 
-    <h2 class="font-bold">Featured show kits</h2>
-    <hr/>
-    <section id="snares">
-        <h3>Snares</h3>
-        <div class="flex gap-1 w-1/4 flex-wrap">
+        <hr class="text-black h-1"/>
+    <h2 class="font-bold text-xl">Featured Kit</h2>
+    </section>
+    <section id="snares" class="flex flex-col gap-6 items-center px-4">
+        <h3 class="text-2xl uppercase font-thin border-t mt-4 pt-4 w-full text-center">Snares</h3>
+        <div class="flex gap-3 flex-wrap justify-center">
             {snares.map((snare) => (
             <Snare
                 key={snare.code}
                 {...snare}
             />
-            ))}
-        </div>
-        <div>
-            {tests.map((test) => (
-            <div>
-                <h1>{test.name as any}</h1>
-                <p>{test.location as any}</p>
-            </div>
             ))}
         </div>
     </section>
