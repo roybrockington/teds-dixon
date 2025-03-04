@@ -2,10 +2,12 @@
 import Header from './Header.astro';
 import snares from "../assets/snares.json";
 import Snare from './Snare.astro';
+import Footer from './Footer.astro';
 import SocialLinks from './SocialLinks.astro';
 ---
 
 <div id="container">
+
     <Header />
 
     <section id='hero' class="w-full flex items-center justify-center h-80 bg-gray-100">
@@ -32,5 +34,19 @@ import SocialLinks from './SocialLinks.astro';
             ))}
         </div>
     </section>
+
+    <section id="hardware" class="flex flex-col gap-6 items-center px-4">
+        <h3 class="text-2xl uppercase font-thin border-t mt-4 pt-4 w-full text-center">Hardware</h3>
+        <div class="flex gap-3 flex-wrap justify-center">
+        </div>
+    </section>
+
+    <section id="drumsets" class="flex flex-col gap-6 items-center px-4">
+        <h3 class="text-2xl uppercase font-thin border-t mt-4 pt-4 w-full text-center">Drum Sets</h3>
+        <div class="flex gap-3 flex-wrap justify-center">
+        </div>
+    </section>
+
+<Footer />
 
 </div>
