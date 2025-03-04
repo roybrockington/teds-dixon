@@ -1,7 +1,10 @@
 ---
 import Header from './Header.astro';
 import snares from "../assets/snares.json";
+import drumsets from "../assets/drumsets.json";
+import hardware from "../assets/hardware.json";
 import Snare from './Snare.astro';
+import DrumSet from './DrumSet.astro';
 import Footer from './Footer.astro';
 import SocialLinks from './SocialLinks.astro';
 ---
@@ -14,10 +17,21 @@ import SocialLinks from './SocialLinks.astro';
         Video
     </section>
 
-    <section id='intro' class="flex flex-col items-center gap-8 px-8">
+    <section id='intro' class="flex flex-col items-center gap-4 px-8">
         <SocialLinks />
-        <h1 class="text-2xl font-bold uppercase">Thanks for visiting!</h1>
-        <p class="text-center">It was great seeing you at the Dixon booth.<br/> Explore all of the incredible kits and snares on display at the links below.</p>
+        <h1 class="text-2xl font-bold uppercase">
+            Dixon and Sound Service Europe would like to thank you for your visit!
+        </h1>
+        <p>
+            It was great to see you at the Dixon/Rogers booth.
+        </p>
+        <p>
+            Discover all the incredible kits and snares on display at the links below.
+        </p>
+        <p class="flex font-semibold items-center gap-4 w-full justify-center bg-indigo-50 rounded py-2">
+            Questions?
+            <a href="https://www.sound-service.eu/contact" class="border border-indigo-800 text-indigo-800 px-3 rounded-lg mt-auto hover:text-white hover:bg-indigo-700">Contact us</a>
+        </p>
 
         <hr class="text-black h-1"/>
         <h2 class="font-bold text-xl">Featured Kit</h2>
@@ -35,18 +49,30 @@ import SocialLinks from './SocialLinks.astro';
         </div>
     </section>
 
-    <section id="hardware" class="flex flex-col gap-6 items-center px-4">
-        <h3 class="text-2xl uppercase font-thin border-t mt-4 pt-4 w-full text-center">Hardware</h3>
-        <div class="flex gap-3 flex-wrap justify-center">
-        </div>
-    </section>
-
     <section id="drumsets" class="flex flex-col gap-6 items-center px-4">
         <h3 class="text-2xl uppercase font-thin border-t mt-4 pt-4 w-full text-center">Drum Sets</h3>
         <div class="flex gap-3 flex-wrap justify-center">
+            {drumsets.map((drumset) => (
+            <DrumSet
+                key={drumset.code}
+                {...drumset}
+            />
+            ))}
         </div>
     </section>
 
-<Footer />
+    <section id="hardware" class="flex flex-col gap-6 items-center px-4">
+        <h3 class="text-2xl uppercase font-thin border-t mt-4 pt-4 w-full text-center">Hardware</h3>
+        <div class="flex gap-3 flex-wrap justify-center">
+            {hardware.map((hw) => (
+            <Snare
+                key={hw.code}
+                {...hw}
+            />
+            ))}
+        </div>
+    </section>
+
+    <Footer />
 
 </div>
