@@ -7,6 +7,7 @@ import Snare from './Snare.astro';
 import DrumSet from './DrumSet.astro';
 import Footer from './Footer.astro';
 import SocialLinks from './SocialLinks.astro';
+import Hardware from './Hardware.astro';
 ---
 
 <div id="container">
@@ -65,7 +66,7 @@ import SocialLinks from './SocialLinks.astro';
         <h3 class="text-2xl uppercase font-thin border-t mt-4 pt-4 w-full text-center">Hardware</h3>
         <div class="flex gap-3 flex-wrap justify-center">
             {hardware.map((hw) => (
-            <Snare
+            <Hardware
                 key={hw.code}
                 {...hw}
             />
