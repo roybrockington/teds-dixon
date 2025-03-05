@@ -3,7 +3,7 @@ import ssgLogo from '../../public/ssg_logo.png'
 import { Image } from 'astro:assets';
 ---
 
-<footer class="w-full flex flex-col items-center px-3 h-48 justify-center bg-[url('../../public/teds_header.png')]">
+<footer class="w-full flex flex-col items-center px-3 h-48 justify-center ssg">
     <div class="flex gap-4 items-center">
         <Image src={ssgLogo} alt="Dixon Drums" class="h-6 w-auto" />
         <div class="flex flex-col justify-center"> 
@@ -16,3 +16,9 @@ import { Image } from 'astro:assets';
         🌍 https://www.sound-service.eu
     </a>
 </footer>
+
+<style>
+.ssg {
+    background: #0b6db6;
+}
+</style>

@@ -8,15 +8,17 @@ import DrumSet from './DrumSet.astro';
 import Footer from './Footer.astro';
 import SocialLinks from './SocialLinks.astro';
 import Hardware from './Hardware.astro';
+import Video from '../../public/dixon_landing_teds25.mp4'
 ---
 
 <div id="container">
 
     <Header />
 
-    <section id='hero' class="w-full flex items-center justify-center h-80 bg-gray-100">
-        Video
-    </section>
+        <video class="w-full" autoplay loop>
+            <source src={Video} type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
 
     <section id='intro' class="flex flex-col items-center gap-4 px-8">
         <SocialLinks />
